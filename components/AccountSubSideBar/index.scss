@@ -1,0 +1,51 @@
+@import 'variables.scss';
+.sub-sidebar {
+  &.mobile {
+    @include media-breakpoint-up(xl) {
+      display: none;
+    }
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      @include media-breakpoint-down(md) {
+        text-align: center;
+        flex-direction: column;
+      }
+      a {
+        padding: 5px;
+      }
+    }
+  }
+  &.desktop {
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
+  }
+  .logout {
+    color: #8a96b0;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    @include media-breakpoint-down(lg) {
+      padding-top: 5px;
+    }
+    &:hover {
+      color: $tertiary-brand-color;
+    }
+  }
+  padding: 20px;
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    a {
+      color: #8a96b0;
+      li {
+        padding-left: 10px;
+        padding-bottom: 5px;
+        &:hover {
+          color: $tertiary-brand-color;
+        }
+      }
+    }
+  }
+}

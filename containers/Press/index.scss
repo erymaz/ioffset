@@ -1,0 +1,20 @@
+.press {
+  &.block {
+    padding-top: 0;
+    width: 100%;
+  }
+  .block {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ant-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .single-article {
+    padding: 5px;
+  }
+}

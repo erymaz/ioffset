@@ -1,0 +1,21 @@
+@import 'variables.scss';
+.single-article {
+  .article-image {
+    margin-top: 60px;
+    border-radius: 4px;
+    height: 300px;
+  }
+  .article-title {
+    font-size: $small-header-text;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: $primary-brand-color;
+    &.link:hover {
+      text-decoration: underline;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: $small-header-text-md;
+    }
+  }
+}

@@ -1,0 +1,197 @@
+@import url('https://use.typekit.net/kte2mno.css');
+@import 'variables.scss';
+
+html body {
+  font-family: $primary-font;
+  color: $primary-brand-color;
+  font-size: $text-size;
+  .ant-layout {
+    background-color: #fff;
+  }
+  .ant-btn {
+    &.ant-btn-primary {
+      height: 40px;
+      width: 160px;
+      border-radius: 4px;
+      background-color: $primary-button-color;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      &:hover {
+        color: $primary-button-color;
+        background-color: #fff;
+        border: 1px solid $primary-button-color;
+      }
+    }
+    &.ant-btn-secondary {
+      height: 40px;
+      width: 160px;
+      border-radius: 4px;
+      background-color: $secondary-button-color;
+      color: #fff;
+      border: none;
+      &:hover {
+        color: $secondary-button-color;
+        background-color: #fff;
+        border: 1px solid $secondary-button-color;
+      }
+    }
+    &.ant-btn-tertiary {
+      height: 40px;
+      width: 160px;
+      border-radius: 4px;
+      background-color: #fff;
+      color: $secondary-button-color;
+      border: 1px solid $secondary-button-color;
+      &:hover {
+        color: #fff;
+        background-color: $secondary-button-color;
+      }
+    }
+  }
+  .error {
+    color: #f5222d;
+    font-size: 20px;
+  }
+}
+.block {
+  padding: 60px 0;
+  color: $primary-brand-color;
+  @include media-breakpoint-down(md) {
+    padding: 35px 0;
+  }
+}
+
+.page-title {
+  font-size: $page-header-text;
+  font-weight: bold;
+  color: $primary-brand-color;
+  text-align: center;
+  @include media-breakpoint-down(md) {
+    font-size: 40px;
+  }
+}
+.page-subtitle {
+  color: $primary-brand-color;
+  font-size: $small-header-text;
+  text-align: center;
+  @include media-breakpoint-down(md) {
+    font-size: $small-header-text-md;
+  }
+}
+.section-title {
+  color: $primary-brand-color;
+  font-size: $medium-header-text;
+  font-weight: bold;
+  line-height: 48px;
+  @include media-breakpoint-down(md) {
+    font-size: $medium-header-text-md;
+  }
+}
+.section-link {
+  height: 20px;
+  width: 300px;
+  color: $complementary-color;
+  font-weight: bold;
+  font-size: $link-text-size;
+  line-height: 20px;
+}
+.pre-header {
+  font-size: $small-header-text;
+  color: $complementary-color;
+  @include media-breakpoint-down(md) {
+    font-size: $small-header-text-md;
+  }
+}
+.subtext {
+  color: $primary-brand-color;
+  opacity: 0.5;
+  font-size: 12px;
+  font-weight: 100;
+}
+.image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.ant-carousel {
+  width: 100%;
+  background-color: #2867c4;
+}
+.section-text {
+  line-height: 20px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.text-lighter {
+  color: $tertiary-brand-color;
+}
+.text-primary-opacity-50 {
+  color: $primary-brand-color;
+  opacity: 0.5;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.tertiary-background {
+  background-color: $tertiary-background-color;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #bdbdc1;
+  border-radius: 4px;
+  display: block;
+  height: 41px;
+  margin-top: 5px;
+  padding: 5px;
+  color: $primary-brand-color;
+}
+
+.ant-form-item-label > label::after {
+  margin: 0 8px 0 0 !important;
+}
+.form {
+  border: 1px solid #bdbdc1;
+  padding: 30px;
+  border-radius: 4px;
+  margin: 25px 10px;
+
+  label {
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    color: #bdbdc1;
+    margin-bottom: 5px;
+  }
+  textarea {
+    height: 150px;
+    resize: none;
+  }
+  .ant-btn.ant-btn-secondary {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.disabled-input {
+  width: 50%;
+  display: inline-block;
+  margin-right: 15px;
+  border: 1px solid #bdbdc1;
+  border-radius: 5px;
+  padding: 10px;
+  word-break: break-all;
+}
+
+.break {
+  display: block;
+}
+.button-container {
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,8 @@
+.next
+package.lock
+yarn.lock
+node_modules
+.env
+.history
+.well-known/
+	out/

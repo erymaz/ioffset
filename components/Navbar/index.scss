@@ -1,0 +1,30 @@
+@import 'variables.scss';
+.nav-bar {
+  &.mobile {
+    position: fixed;
+    height: 100%;
+    top: 79px;
+    right: -100%;
+    width: 100%;
+    color: $tertiary-brand-color;
+    background-color: #fff;
+    text-align: center;
+    padding: 0;
+    transition: right 0.4s linear;
+    border-top: 1px solid #d9e2e6;
+    z-index: 2;
+    list-style-type: none;
+    &.active {
+      background: #fff;
+      right: 0;
+      transition: right 0.4s linear;
+    }
+    li {
+      padding: 30px;
+      border-bottom: 1px solid #d9e2e6;
+      a {
+        color: $primary-brand-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import 'variables';
+.intro-info {
+  .vertical-align-center {
+    @include media-breakpoint-up(md) {
+      align-items: center;
+    }
+  }
+  .image_container {
+    @include media-breakpoint-up(md) {
+      margin-left: 15px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: 20px;
+    }
+    .image {
+      border-radius: 4px;
+    }
+  }
+  .page-subtitle {
+    margin-bottom: 35px;
+  }
+}

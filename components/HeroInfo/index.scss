@@ -1,0 +1,25 @@
+@import 'variables.scss';
+.hero-info-intro {
+  color: $secondary-brand-color;
+  width: 100%;
+  @include media-breakpoint-up(lg) {
+    .block {
+      display: flex;
+    }
+  }
+  .page-subtitle,
+  .section-title {
+    color: #fff;
+  }
+  .section-text {
+    color: $secondary-brand-color;
+  }
+  .intro-info {
+    .vertical-align-center {
+      align-items: center;
+    }
+    .ant-btn.ant-btn-primary {
+      margin-bottom: 10px;
+    }
+  }
+}

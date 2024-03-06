@@ -1,0 +1,45 @@
+@import 'variables.scss';
+.footer {
+  width: 100%;
+  height: 150px;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  .ant-row-flex-center {
+    align-items: center;
+  }
+  .social .icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    @include media-breakpoint-down(lg) {
+      width: 30%;
+      margin: 0 auto;
+    }
+  }
+  .ant-col {
+    @include media-breakpoint-down(lg) {
+      margin: 15px 0;
+    }
+  }
+  .footer-list {
+    @include media-breakpoint-up(sm) {
+      display: flex;
+    }
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    li {
+      padding: 0 15px;
+    }
+  }
+  .logo {
+    @include media-breakpoint-up(sm) {
+      margin-right: 20px;
+    }
+    img {
+      height: 25px;
+    }
+  }
+}

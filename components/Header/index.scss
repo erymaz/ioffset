@@ -1,0 +1,126 @@
+@import 'variables.scss';
+
+.main-header {
+  width: 100%;
+  height: 80px;
+  background: transparent;
+  position: fixed;
+  padding: 0 10px;
+  top: 0;
+  border-bottom: 1px solid rgba(26, 48, 101, 0.05);
+  z-index: 5;
+  -webkit-transition: background-color 0.3s linear;
+  -ms-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+  &.scrolling {
+    background: #fff;
+    .nav-bar a li {
+      color: $tertiary-brand-color !important;
+    }
+    .theme-burger-btn {
+      border: 2px solid $tertiary-brand-color;
+      span {
+        background: $tertiary-brand-color;
+      }
+    }
+  }
+  .theme-burger-btn {
+    width: 40px;
+    height: 35px;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid #fff;
+    float: right;
+    margin-left: 15px;
+    position: relative;
+    cursor: pointer;
+    span {
+      position: absolute;
+      left: 5px;
+      right: 5px;
+      height: 2px;
+      display: block;
+      background: #fff;
+      transition: 0.3s;
+
+      &:nth-child(1) {
+        top: 9px;
+      }
+
+      &:nth-child(2) {
+        top: 50%;
+      }
+
+      &:nth-child(3) {
+        bottom: 7px;
+      }
+    }
+    &.active {
+      border-color: $tertiary-brand-color;
+      span {
+        border-radius: 50%;
+        background: $tertiary-brand-color;
+
+        &:nth-child(1) {
+          transform: rotate(45deg);
+          top: 14px;
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+          bottom: 14px;
+          left: 5px;
+        }
+      }
+    }
+    &.no-background {
+      border-color: $tertiary-brand-color;
+      span {
+        background: $tertiary-brand-color;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+  }
+  .ant-row-flex-center {
+    height: 100%;
+    align-items: center;
+  }
+  .desktop-nav {
+    display: none;
+    float: right;
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+    .nav-bar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      &:not(.no-background) {
+        a li {
+          color: white;
+        }
+      }
+      a {
+        display: inline-block;
+        li {
+          display: block;
+          text-align: center;
+          padding: 14px 16px;
+        }
+        &:last-child {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+  .logo {
+    height: 25px;
+    margin-right: 20px;
+  }
+}

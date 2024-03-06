@@ -1,0 +1,26 @@
+.offset-profile {
+  margin: 40px 0;
+}
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .social {
+    .icons {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      .fb-icon {
+        height: 24px;
+      }
+      .twitter-icon {
+        width: 27px;
+      }
+      .whatsapp-icon {
+        width: 24px;
+      }
+    }
+  }
+}

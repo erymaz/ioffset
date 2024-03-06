@@ -1,0 +1,129 @@
+@import 'variables.scss';
+
+.overview {
+  background-color: #fff;
+  padding: 35px;
+  .title,
+  .ant-progress-text {
+    font-size: 22px;
+    color: $primary-brand-color;
+    font-weight: bold;
+  }
+  .contribution {
+    font-weight: bold;
+    margin-top: 30px;
+    .contribution-data {
+      width: 100%;
+      border: 1px solid #bdbdc1;
+      text-align: center;
+      padding: 15px 30px 25px 30px;
+      .ant-progress.ant-progress-circle {
+        margin-bottom: 20px;
+      }
+      .tonnes-pretext {
+        color: #9ba1ad;
+      }
+      .progress-circles {
+        display: flex;
+        justify-content: space-around;
+        @include media-breakpoint-down(xs) {
+          .ant-progress-circle .ant-progress-inner {
+            width: 100% !important;
+            height: 100% !important;
+          }
+        }
+        @include media-breakpoint-down(md) {
+          flex-direction: column;
+        }
+      }
+      .tonnes {
+        margin-bottom: 0;
+        @include media-breakpoint-down(xs) {
+          font-size: 18px;
+        }
+        .subtext {
+          display: block;
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1190px) {
+    .referral-link {
+      margin-left: 70px;
+    }
+  }
+  .social,
+  .refferals-header,
+  .invite,
+  .offset-list {
+    margin-top: 20px;
+  }
+  .social {
+    .icons {
+      display: flex;
+      justify-content: space-evenly;
+      width: 30%;
+      margin: 0 auto;
+      .fb-icon {
+        height: 24px;
+      }
+      .twitter-icon {
+        width: 27px;
+      }
+      .whatsapp-icon {
+        width: 24px;
+      }
+    }
+  }
+  .refferals div,
+  .refferals-header {
+    padding: 13px 0;
+    border-bottom: 1px solid #bdbdc1;
+  }
+  .refferals-header {
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+  .refferals {
+    display: flex;
+    .refferal-name {
+      width: 30%;
+      font-weight: bold;
+    }
+    .refferal-date {
+      width: 45%;
+    }
+    .refferal-trees {
+      width: 25%;
+    }
+  }
+  .invite {
+    padding: 20px;
+    border: 1px solid #bdbdc1;
+    .disabled-input {
+      width: 78%;
+      @media (max-width: 1698px) {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+    img {
+      margin-right: 10px;
+      float: left;
+    }
+
+    .ant-btn.ant-btn-secondary {
+      width: 100px;
+    }
+    .invite-header {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+  }
+  .offset-list {
+    color: #9ba1ad;
+  }
+}

@@ -1,0 +1,30 @@
+.reduce-page-content {
+  margin-top: 60px;
+  .section-text {
+    line-height: 24px;
+  }
+  .section-text-second {
+    margin-top: 40px;
+  }
+  .image {
+    margin-top: 10px;
+  }
+  .targets {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 40px;
+    .single-target {
+      display: flex;
+    }
+    .targets-title {
+      font-weight: bold;
+    }
+    &.inline-list {
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import 'variables.scss';
+.hero {
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 60px;
+  }
+  &.block {
+    padding: 70px 0;
+  }
+  &.no-image .page-subtitle {
+    color: $secondary-brand-color;
+  }
+  width: 100%;
+  background-color: #2967c4;
+  @include media-breakpoint-up(lg) {
+    .page-subtitle {
+      margin-bottom: 35px;
+    }
+  }
+  .page-title,
+  .page-subtitle,
+  .section-title,
+  .intro-info-reverse {
+    color: #fff;
+  }
+  .page-title {
+    margin-bottom: 0;
+  }
+  .intro-info-reverse,
+  .page-title {
+    padding-top: 65px;
+  }
+}

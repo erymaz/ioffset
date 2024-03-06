@@ -1,0 +1,43 @@
+//////////////////////////////////////////////////
+
+// Whenever this file is changed, you will need to re-run 'yarn dev'.
+
+//////////////////////////////////////////////////
+@import '/assets/styles/media-breakpoints.scss';
+
+$body-background: white;
+
+$outline-width: 0px;
+$zindex-modal: 9001;
+$zindex-modal-mask: 9000;
+
+//Buttons
+$primary-button-color: #ff535f;
+$secondary-button-color: #00a0ff;
+
+//font-family
+$primary-font: 'sofia-pro';
+//font-sizes
+$x-large-header-text-md: 60px;
+$large-header-text-md: 50px;
+$medium-header-text-md: 30px;
+$small-header-text-md: 22px;
+$page-header-text-md: 40px;
+
+$x-large-header-text: 80px;
+$large-header-text: 56px;
+$medium-header-text: 36px;
+$small-header-text: 24px;
+$page-header-text: 48px;
+
+$link-text-size: 24px;
+$text-size: 16px;
+
+//font-colors
+$primary-brand-color: #1a3065;
+$secondary-brand-color: rgba(255, 255, 255, 0.5);
+$tertiary-brand-color: #00a0ff;
+$complementary-color: #ffffff;
+
+$secondary-background-color: #00d592;
+$tertiary-background-color: #f3f4f7;

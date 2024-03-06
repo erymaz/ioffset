@@ -1,0 +1,170 @@
+@import 'variables.scss';
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: scale3D(0.95, 0.95, 0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale3D(1, 1, 1);
+  }
+}
+
+.Form {
+  animation: fade 200ms ease-out;
+}
+
+.FormGroup {
+  margin: 0;
+  padding: 0;
+  border-style: none;
+  will-change: opacity, transform;
+  border-radius: 4px;
+}
+
+.FormRow {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 0;
+}
+
+.FormRowLabel {
+  width: 15%;
+  min-width: 70px;
+  padding: 11px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@keyframes void-animation-out {
+  0%,
+  to {
+    opacity: 1;
+  }
+}
+
+.FormRowInput {
+  height: 40px;
+  padding: 6px 11px;
+  font-size: 16px;
+  animation: 1ms void-animation-out;
+  margin-bottom: 10px;
+}
+
+.StripeElement--webkit-autofill {
+  background: transparent !important;
+}
+
+.StripeElement {
+  width: 100%;
+  padding: 11px 15px 11px 0;
+  .__PrivateStripeElement {
+    @include media-breakpoint-down(xxs) {
+      width: 277px !important;
+    }
+  }
+}
+
+.google-pay {
+  margin-top: 20px;
+  .ResultTitle {
+    margin-bottom: 10px;
+  }
+  .ant-btn.ant-btn-primary {
+    width: 100%;
+  }
+}
+.SubmitButton {
+  height: 40px;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: $secondary-button-color;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    color: $secondary-button-color;
+    background-color: #fff;
+    border: 1px solid $secondary-button-color;
+  }
+  &.SubmitButton--error {
+    transform: translateY(15px);
+    &:active {
+      transform: scale(0.99) translateY(15px);
+    }
+  }
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+    background-color: #7795f8;
+    box-shadow: none;
+  }
+}
+
+.ErrorMessage {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+  font-size: 13px;
+  margin-top: 0px;
+  width: 100%;
+  transform: translateY(-15px);
+  opacity: 0;
+  animation: fade 150ms ease-out;
+  animation-delay: 50ms;
+  animation-fill-mode: forwards;
+  will-change: opacity, transform;
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.Result {
+  text-align: center;
+  animation: fade 200ms ease-out;
+  .ant-btn.ant-btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+.ResultTitle {
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.ResultMessage {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  line-height: 1.6em;
+  text-align: center;
+}
+
+.ResetButton {
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+.InputContainer {
+  .ElementsApp,
+  .ElementsApp .InputElement {
+    color: #000 !important;
+  }
+}
+.stripe-payment-wrapper .form-textbox.cc_firstName,
+.stripe-payment-wrapper .form-textbox.cc_lastName {
+  color: #f3f3f3 !important;
+}

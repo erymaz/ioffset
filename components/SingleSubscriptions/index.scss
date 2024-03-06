@@ -1,0 +1,63 @@
+@import 'variables.scss';
+
+.single-subscription {
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.03),
+    0 6px 10px 2px rgba(0, 0, 0, 0.08);
+  margin: 20px 0;
+  font-size: 16px;
+  height: 95%;
+  @include media-breakpoint-up(lg) {
+    position: relative;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 40px 10px;
+  }
+  .section-title {
+    margin-bottom: 0;
+  }
+  .price {
+    font-size: 72px;
+    &:before {
+      content: '£';
+      font-size: $small-header-text;
+      vertical-align: super;
+      color: $primary-brand-color;
+      opacity: 0.5;
+    }
+  }
+  .button-container {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+  }
+  .popular-with-list {
+    list-style-type: none;
+    text-align: left;
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 30px;
+    }
+    li {
+      line-height: 23px;
+      margin-left: -24px;
+      &:before {
+        content: '\2022';
+        color: $primary-brand-color;
+        opacity: 0.5;
+        font-weight: bold;
+        display: inline-block;
+        width: 20px;
+        margin-left: -20px;
+        font-size: 30px;
+      }
+    }
+  }
+  .ant-btn.ant-btn-primary {
+    width: 90%;
+    margin-top: 15px;
+    @include media-breakpoint-up(lg) {
+      width: 70%;
+    }
+  }
+}

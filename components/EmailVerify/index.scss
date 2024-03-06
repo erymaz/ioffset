@@ -1,0 +1,11 @@
+.verify {
+  text-align: center;
+  margin-top: 80px;
+  display: flex;
+  min-height: 30vw;
+  flex-direction: column;
+  justify-content: center;
+  .page-title {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,69 @@
+@import 'variables.scss';
+
+.account {
+  width: 100%;
+  margin-top: 80px;
+  background-color: #f4f6f7;
+  &.block {
+    padding: 48px;
+    min-height: 100vh;
+    @include media-breakpoint-down(xl) {
+      padding: 15px 8px;
+    }
+  }
+  .sidebar {
+    background-color: #fff;
+    @include media-breakpoint-up(xl) {
+      margin-right: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 20px;
+      .profile li,
+      li {
+        color: $primary-brand-color;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px;
+        .icon {
+          width: 18px;
+          height: 18px;
+          margin-right: 10px;
+          background-size: cover;
+          &.icon-Overview {
+            background-image: url(/images/icons/account/Icon-overview.svg);
+          }
+          &.icon-Account {
+            background-image: url(/images/icons/account/icon-profile.svg);
+          }
+          &.icon-Subscription {
+            background-image: url(/images/icons/account/icon-subscription.svg);
+          }
+          &.icon-page {
+            background-image: url(/images/icons/account/icon-page.svg);
+          }
+        }
+        &:hover {
+          color: $tertiary-brand-color;
+        }
+        &.selected {
+          background-color: #f5faff;
+          color: $tertiary-brand-color;
+          .icon-Overview {
+            background-image: url(/images/icons/account/Icon-overview-active.svg);
+          }
+          .icon-Account {
+            background-image: url(/images/icons/account/Icon-profile-active.svg);
+          }
+          .icon-Subscription {
+            background-image: url(/images/icons/account/icon-subscription-active.svg);
+          }
+          .icon-page {
+            background-image: url(/images/icons/account/icon-page-active.svg);
+          }
+        }
+      }
+    }
+  }
+}

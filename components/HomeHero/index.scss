@@ -1,0 +1,33 @@
+@import 'variables.scss';
+.home-hero {
+  height: 830px;
+  width: 100%;
+  align-items: center;
+  @include media-breakpoint-down(md) {
+    height: 630px;
+  }
+  .home-page-title {
+    font-size: $x-large-header-text;
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: 900;
+    @include media-breakpoint-down(lg) {
+      line-height: 77px;
+      margin-bottom: 12px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: $x-large-header-text-md;
+    }
+  }
+  .subtitle {
+    font-size: $small-header-text;
+    margin-bottom: 30px;
+    color: #fff;
+    @include media-breakpoint-down(md) {
+      font-size: $small-header-text-md;
+    }
+  }
+  .price {
+    font-weight: bold;
+  }
+}

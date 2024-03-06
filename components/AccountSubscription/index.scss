@@ -1,0 +1,157 @@
+@import 'variables.scss';
+
+.subscription-container {
+  background-color: #fff;
+  .section-footer {
+    padding: 30px 0 20px 36px;
+    border-top: 1px solid #d9d9d9;
+    .text-lighter {
+      cursor: pointer;
+      width: fit-content;
+    }
+    .confirm_password {
+      width: 70%;
+    }
+  }
+  .stripe {
+    margin: 20px 0;
+    .FormGroup {
+      margin: 0;
+      .FormRow {
+        margin-left: 0;
+      }
+    }
+  }
+  .AppWrapper {
+    max-width: 700px;
+  }
+  .existing_billing_header {
+    margin-top: 26px;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+  .existing_billing {
+    font-size: 14px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .subscription {
+    padding: 35px;
+    .title {
+      font-size: $small-header-text;
+      color: $primary-brand-color;
+      font-weight: bold;
+      @include media-breakpoint-down(md) {
+        font-size: $small-header-text-md;
+      }
+    }
+    .subscripiton-header {
+      font-weight: bold;
+      margin-top: 30px;
+    }
+    .ant-form-item-label {
+      line-height: 20px;
+      & > label {
+        color: $primary-brand-color;
+        opacity: 0.5;
+        font-size: 12px;
+      }
+    }
+    .ant-form-item {
+      margin-bottom: 5px;
+      width: 60%;
+    }
+    .subscription-form-header {
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    .plan-container {
+      padding: 20px;
+      border: 1px solid #bdbdc1;
+      width: 60%;
+      border-radius: 6px;
+      box-shadow: 1px 1px 0px 0px #bdbdc1;
+      cursor: pointer;
+      @media (max-width: 1240px) {
+        width: 100%;
+        max-width: 700px;
+      }
+    }
+    .plan {
+      .subtext {
+        margin-bottom: 0;
+      }
+    }
+    .plan-header {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.update_subscription_modal {
+  color: $primary-brand-color;
+  text-align: center;
+  .ant-input-number {
+    width: 65%;
+    margin-right: 20px;
+  }
+  .plan-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .plan-name {
+    width: 33%;
+    text-align: left;
+  }
+  .plan-price {
+    width: 23%;
+    text-align: left;
+  }
+  .subtotal {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .plus {
+    margin-right: 5px;
+  }
+  .adults,
+  .children {
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .subtext {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .submit-container {
+    margin-top: 30px;
+  }
+  .subscription_plan {
+    display: flex;
+    justify-content: space-between;
+    color: $primary-brand-color;
+    .ant-btn.ant-btn-primary {
+      width: 80px;
+      height: 25px;
+      font-size: 13px;
+      &.selected {
+        background-color: $secondary-button-color;
+        color: #fff;
+        &:hover {
+          color: $secondary-button-color;
+          background-color: #fff;
+          border: 1px solid $secondary-button-color;
+        }
+      }
+      &[type='button']:disabled {
+        border: 1px solid #999999;
+        background-color: #cccccc;
+        color: #666666;
+      }
+    }
+  }
+}

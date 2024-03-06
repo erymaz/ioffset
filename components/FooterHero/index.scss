@@ -1,0 +1,23 @@
+@import 'variables.scss';
+.footer-hero {
+  height: 600px;
+  width: 100%;
+  align-items: center;
+  .subtitle {
+    font-size: 24px;
+    color: #fff;
+  }
+  .title {
+    font-size: $large-header-text;
+    font-weight: 900;
+    margin-bottom: 30px;
+    line-height: 57px;
+    color: #fff;
+    @include media-breakpoint-down(md) {
+      font-size: 40px;
+    }
+  }
+  .price {
+    color: $secondary-brand-color;
+  }
+}

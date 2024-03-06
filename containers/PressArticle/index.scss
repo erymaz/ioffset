@@ -1,0 +1,7 @@
+@import 'variables.scss';
+
+.single-article {
+  @include media-breakpoint-down(lg) {
+    margin-top: 60px;
+  }
+}

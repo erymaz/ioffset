@@ -1,0 +1,43 @@
+@import 'variables.scss';
+.articles {
+  color: $primary-brand-color;
+  width: 100%;
+  &.lightGreen,
+  &.gradient {
+    background-color: $secondary-background-color;
+    .block {
+      color: #fff;
+    }
+    .text-lighter {
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+  &.gradient {
+    background: rgb(40, 104, 197);
+    background: -moz-linear-gradient(
+      top,
+      rgba(40, 104, 197, 1) 0%,
+      $secondary-background-color 100%
+    );
+    background: -webkit-linear-gradient(
+      top,
+      rgba(40, 104, 197, 1) 0%,
+      $secondary-background-color 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      rgba(40, 104, 197, 1) 0%,
+      $secondary-background-color 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2868c5', endColorstr='#00d592',GradientType=0 );
+  }
+  .title {
+    font-size: $medium-header-text;
+    font-weight: bold;
+    color: $primary-brand-color;
+    @include media-breakpoint-down(md) {
+      font-size: $medium-header-text-md;
+    }
+  }
+}

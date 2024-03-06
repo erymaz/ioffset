@@ -1,0 +1,11 @@
+@import 'variables.scss';
+.about {
+  .section-title {
+    line-height: 48px;
+  }
+  @include media-breakpoint-up(lg) {
+    .about-info-block {
+      display: flex;
+    }
+  }
+}
